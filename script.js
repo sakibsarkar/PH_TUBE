@@ -19,8 +19,18 @@ const loadcontent = async (id) => {
     let parent = document.querySelector(".videos");
     parent.innerHTML=""
     ContentData.forEach((content) => {
+        // video duration
+        let duration =  content.others?.posted_date
+        if(duration !=""){
+        let durationInMilisec = duration * 1000
+        var hr = Math.floor(durationInMilisec / (60 * 60 * 1000)) + "hrs "
+        var min = Math.floor(durationInMilisec % (60 * 60 * 1000) / (60 * 1000)) + "min ago"
+        }
+        else{
+           var hr =""
+            var min = ""
+        }
         // parent div
-        
         let thubnail = content.thumbnail;
         let tittle = content.title
         let authorPic = content.authors[0].profile_picture;
@@ -31,7 +41,7 @@ const loadcontent = async (id) => {
         card.classList.add("videoCard")
         card.innerHTML = `
                     <div class="thubnailConatiner">
-                    <p class="time">3hrs 56min ago<p>
+                    <p class="time">${hr}${min}<p>
                     <img src="${thubnail}" alt="">
                     </div>
                     <div class="info">
@@ -49,7 +59,8 @@ const loadcontent = async (id) => {
         
         `
         parent.appendChild(card)
+        
     })
-
+    
 }
 loadData()
