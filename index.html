@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH TUBE</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            font-family: Inter;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        nav {
+            width: 1440px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin: 50px 0 0 0;
+
+        }
+
+        .left {
+            width: 182px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo_text {
+            color: #252525;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .ph {
+            color: #FF1F3D;
+        }
+
+        .sort {
+            display: inline-flex;
+            padding: 10px 20px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 4px;
+            border: none;
+            background: rgba(37, 37, 37, 0.20);
+        }
+
+
+        .blog {
+            display: inline-flex;
+            padding: 10px 20px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 4px;
+            border: none;
+            background: #FF1F3D;
+            color: white;
+        }
+
+        .underline {
+            background: rgba(23, 23, 23, 0.20);
+            width: 1440px;
+            height: 1px;
+            margin: 32px 0 0 0;
+        }
+
+
+        .sec1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .categoryBtn {
+            background-color: red;
+            width: 1440px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 44px;
+            margin: 32px 0 0 0;
+        }
+
+        .categoryBtn button {
+            display: inline-flex;
+            height: 35px;
+            padding: 5px 20px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .videos {
+            display: grid;
+            grid-template-columns: repeat(4, 320px);
+            gap: 24px;
+
+            justify-items: center;
+            align-items: center;
+        }
+
+        .videoCard {
+            width: 312px;
+            height: 300px;
+
+        }
+
+        .thubnailConatiner {
+            position: relative;
+            overflow: hidden;
+            width: 312px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .thubnailConatiner img {
+            width: 312px;
+            height: 200px;
+            border-radius: 8px;
+        }
+
+        .info {
+            display: flex;
+            justify-content: flex-start;
+            margin: 20px 0 0 0;
+            gap: 12px;
+        }
+
+        .info img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+
+        .rightPart h1 {
+            color: #171717;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 26px;
+
+        }
+
+        .rightPart p {
+            color: rgba(23, 23, 23, 0.70);
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin: 10px 0 0 0;
+        }
+
+        .time {
+            position: absolute;
+            position: absolute;
+            bottom: 16px;
+            right: 17px;
+            padding: 5px;
+            color: #FFF;
+            border-radius: 4px;
+            background: #171717;
+            font-size: 10px;
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <g clip-path="url(#clip0_13_1170)">
+                        <path
+                            d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z"
+                            fill="#FF6B6B" />
+                        <path d="M32 16H0C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16Z" fill="#FF1F3D" />
+                        <path
+                            d="M11.6249 25.0625C11.4791 25.0625 11.3329 25.0286 11.1982 24.9597C10.8847 24.7994 10.6875 24.4771 10.6875 24.125V7.875C10.6875 7.52294 10.8848 7.20056 11.1982 7.04031C11.5116 6.88006 11.8884 6.90888 12.1739 7.115L23.4239 15.24C23.6679 15.4163 23.8125 15.699 23.8125 16C23.8125 16.301 23.6679 16.5838 23.4239 16.76L12.1739 24.885C12.0111 25.0026 11.8185 25.0625 11.6249 25.0625Z"
+                            fill="#F9F9F9" />
+                        <path
+                            d="M10.6875 16V24.125C10.6875 24.4771 10.8848 24.7994 11.1982 24.9597C11.3328 25.0286 11.4791 25.0625 11.6249 25.0625C11.8184 25.0625 12.0111 25.0026 12.1739 24.885L23.4239 16.76C23.6679 16.5838 23.8125 16.301 23.8125 16H10.6875Z"
+                            fill="#E2DFF4" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_13_1170">
+                            <rect width="32" height="32" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <p class="logo_text"><span class="ph">PH</span> TUBE</p>
+            </div>
+
+            <div class="mid">
+                <button class="sort">Sort by view</button>
+            </div>
+
+            <div class="right">
+                <button class="blog">Blog</button>
+            </div>
+
+
+        </nav>
+        <div class="underline"></div>
+    </header>
+
+    <main>
+        <section class="sec1">
+
+            <div class="categoryBtn" id="categoryBtn">
+
+
+            </div>
+
+            <div class="videos"></div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
