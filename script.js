@@ -9,6 +9,7 @@ const loadData = async () => {
         button.setAttribute("onclick", `loadcontent("${categorey.category_id}")`)
         button.innerText = categorey.category
         buttonContainer.appendChild(button)
+        
     })
 }
 
@@ -71,7 +72,7 @@ sortID = id
 
 
 const sort = () => {
-    const loadSortedcontent = async (id) => {
+    const loadSortedcontent = async () => {
         const res = await fetch(`https://openapi.programming-hero.com/api/videos/category/${sortID}`);
         const data = await res.json();
         let ContentData = data.data;
