@@ -22,7 +22,7 @@ const loadcontent = async (id) => {
     const res = await fetch(`https://openapi.programming-hero.com/api/videos/category/${id}`)
     const data = await res.json()
     let ContentData = data.data;
-    console.log(ContentData.length)
+    
     if (ContentData.length !== 0) {
         document.querySelector(".items").innerHTML = ""
         let parent = document.createElement("div");
@@ -34,7 +34,7 @@ const loadcontent = async (id) => {
             if (duration != "") {
                 let durationInMilisec = duration * 1000
                 var hr = Math.floor(durationInMilisec / (60 * 60 * 1000)) + "hrs "
-                var min = Math.floor(durationInMilisec % (60 * 60 * 1000) / (60 * 1000)) + "min ago"
+                var min = Math.floor(durationInMilisec % (60 * 60 * 1000) / (60 * 1000)) + " min ago"
             }
             else {
                 var hr = ""
@@ -48,7 +48,7 @@ const loadcontent = async (id) => {
             let authorPic = content.authors[0].profile_picture;
             let profileName = content.authors[0].profile_name;
             let isVarifed = content.authors[0].verified
-            console.log(isVarifed)
+            
             if (isVarifed == true) {
                 
                if(duration){
@@ -181,9 +181,8 @@ const loadcontent = async (id) => {
 
     }
     else {
-        let parent = document.querySelector(".videos");
-        parent.innerHTML = "";
-
+        let items = document.querySelector(".items");
+        items.innerHTML = "";
         let errorDiv = document.createElement("div")
         errorDiv.classList.add("errorContainer")
         errorDiv.innerHTML = `

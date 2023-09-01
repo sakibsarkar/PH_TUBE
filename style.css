@@ -214,3 +214,32 @@ nav {
     align-items: center;
     gap: 10px;
 }
+
+
+/* responsive */
+@media screen and (max-width: 400px) {
+    nav{
+        width: 100%;
+    }
+    .underline{
+        width: 100%;
+    }
+    .videos{
+        grid-template-columns: repeat(1,320px);
+    }
+
+    .categoryBtn{
+        gap: 12px;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 720px) {
+}
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+}
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+}
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+}
+@media screen and (min-width: 1921px) {
+}
