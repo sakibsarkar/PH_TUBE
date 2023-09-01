@@ -234,6 +234,20 @@ nav {
     }
 }
 @media screen and (min-width: 401px) and (max-width: 720px) {
+    nav{
+        width: 100%;
+    }
+    .underline{
+        width: 100%;
+    }
+    .videos{
+        grid-template-columns: repeat(1,320px);
+    }
+
+    .categoryBtn{
+        gap: 12px;
+        width: 100%;
+    }
 }
 @media screen and (min-width: 721px) and (max-width: 1280px) {
 }
