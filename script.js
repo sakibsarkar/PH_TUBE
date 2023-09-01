@@ -22,7 +22,7 @@ const loadcontent = async (id) => {
     const res = await fetch(`https://openapi.programming-hero.com/api/videos/category/${id}`)
     const data = await res.json()
     let ContentData = data.data;
-    console.log(ContentData.length)
+    
     if (ContentData.length !== 0) {
         document.querySelector(".items").innerHTML = ""
         let parent = document.createElement("div");
@@ -49,7 +49,7 @@ const loadcontent = async (id) => {
             let profileName = content.authors[0].profile_name;
             let isVarifed = content.authors[0].verified
             
-            if (isVarifed == true) {
+            if (isVarifed) {
                 
                 if(duration){
                  let view = content.others?.views
@@ -239,9 +239,8 @@ const sort = () => {
             let tittle = content.title
             let authorPic = content.authors[0].profile_picture;
             let profileName = content.authors[0].profile_name;
-            let isVarifed = content.authors[0].verifed
-            if (isVarifed == true) {
-                
+            let isVarifed = content.authors[0].verified
+            if (isVarifed) {
                 if(duration){
                  let view = content.others?.views
                  let card = document.createElement("div")
@@ -314,7 +313,7 @@ const sort = () => {
                 }
              }
              else {
-                 if (duration) {
+                 if (duration){
                      let view = content.others?.views
                      let card = document.createElement("div")
                      card.classList.add("videoCard")

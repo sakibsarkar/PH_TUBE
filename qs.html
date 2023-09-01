@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+        * {
+            font-family: Inter;
+
+        }
+
+        img {
+            width: 335px;
+        }
+
+        ol {
+            display: flex;
+            flex-direction: column;
+            gap: 77px;
+        }
+
+        span{
+            color: red;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><i>Q1. </i>Discuss the scope of var, let, and const </h1>
+    <h2>Ans :</h2>
+    <ol>
+        <li>
+            <h3><span>Var :</span> "var" declaration are global scoped, means we can access the variable from anywhere & var declared
+                variables can be updated and redeclared <br>
+                Example :If a variable is declared with "var" inside a function, the variable will be accessible both
+                inside and outside the function</h3>
+            <img src="./images/code1.png" alt="" srcset="">
+        </li>
+        <li>
+            <h3><span>Let :</span> "let" is a keyword introduced in ES6 used to declare a block scoped variable. Blocked scoped
+                variables are limited to the block in which they are defined (Usually denoted by curly braces {}) <br>
+                Example : if we declared a variable inside a loop, then the variable is not accessable ouside the loop
+            </h3>
+            <img src="./images/code2.png" alt="" srcset="">
+        </li>
+        <li>
+            <h3><span>Const :</span> A variable declared with "const" is also a block scoped variable just like "let". Const was also
+                introduced in ES6. But const has a slight deferent, the value of "const" variable cannot be updated.
+                <br>
+                Example : const x = 10; <br>
+                after declaring the variable "x" with "const" ,we can't change the value of "x" <br>
+                if we try to do this x = 18 or x = x + 1 <br>
+                it will give us an error in our code
+            </h3>
+            <img src="./images/code3.png" alt="">
+        </li>
+
+
+    </ol>
+
+
+    <h1><i>Q2. </i>Tell us the use cases of null and undefined</h1>
+    <ol>
+        <li>
+            <h3><span>Undefined:</span>  Undefined is basically used for when we are trying to uninitialized variables, missing function
+                arguments, and when trying to access nonexistent object properties</h3>
+        </li>
+
+        <li>
+            <h3><span>Null:</span> "null" is used to represent the absence of a value. It can also be used in comparisons to check for the absence of a value in a object.</h3>
+        </li>
+    </ol>
+</body>
+
+</html>
