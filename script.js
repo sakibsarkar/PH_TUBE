@@ -183,6 +183,7 @@ const loadcontent = async (id) => {
     else {
         let parent = document.querySelector(".videos");
         parent.innerHTML = "";
+        document.querySelector(".items").innerHTML = ""
 
         let errorDiv = document.createElement("div")
         errorDiv.classList.add("errorContainer")
