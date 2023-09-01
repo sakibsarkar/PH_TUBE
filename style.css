@@ -207,3 +207,10 @@ nav {
     gap: 32px;
     text-align: center;
 }
+
+.helloAuthor{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
