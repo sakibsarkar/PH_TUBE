@@ -252,6 +252,10 @@ nav {
         gap: 12px;
         width: 100%;
     }
+    .error{
+        width: 100%;
+    }
+   
 }
 
 @media screen and (min-width: 401px) and (max-width: 720px) {
@@ -271,6 +275,7 @@ nav {
         gap: 35px;
         width: 100%;
     }
+
 }
 
 @media screen and (min-width: 721px) and (max-width: 1280px) {
